@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>John Homes Property – Official Verification Portal</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#eef2f6;
+}
+
+header{
+background:#0b2c4d;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.logo{
+width:120px;
+display:block;
+margin:auto;
+margin-bottom:10px;
+}
+
+.container{
+width:1100px;
+margin:auto;
+background:white;
+margin-top:40px;
+padding:40px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.verify{
+text-align:center;
+margin-bottom:30px;
+}
+
+input{
+padding:12px;
+width:320px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px 25px;
+background:#caa24a;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#b8923c;
+}
+
+.result{
+display:none;
+margin-top:30px;
+}
+
+.top-layout{
+display:flex;
+justify-content:space-between;
+gap:30px;
+}
+
+.property-info{
+width:70%;
+}
+
+.record{
+margin:10px 0;
+font-size:16px;
+}
+
+.client{
+width:30%;
+text-align:center;
+border-left:1px solid #eee;
+padding-left:20px;
+}
+
+.client img{
+width:180px;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+border:3px solid #caa24a;
+}
+
+.client h4{
+margin-top:10px;
+}
+
+.registry{
+margin-top:20px;
+padding:15px;
+background:#f8f8f8;
+border:1px solid #ddd;
+}
+
+.badge{
+background:#e8f5e9;
+padding:8px;
+display:inline-block;
+margin-top:10px;
+border-radius:5px;
+}
+
+.gallery{
+margin-top:30px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:6px;
+}
+
+.map{
+margin-top:30px;
+}
+
+.payment{
+margin-top:30px;
+padding:20px;
+background:#fafafa;
+border:1px solid #ddd;
+}
+
+footer{
+background:#0b2c4d;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" class="logo">
+
+<h1>John Homes Property</h1>
+<p>San Diego Real Estate Services</p>
+<p>Official Property Registry & Verification Portal</p>
+
+</header>
+
+<div class="container">
+
+<div class="verify">
+
+<h2>Verify Property Certificate</h2>
+
+<p>Enter your Verification ID</p>
+
+<input id="verifyID" placeholder="Enter Verification ID">
+
+<button onclick="verify()">Verify</button>
+
+</div>
+
+<div class="result" id="resultBox">
+
+<div class="top-layout">
+
+<div class="property-info">
+
+<h3>Property Ownership Record</h3>
+
+<div class="record"><b>Buyer Name:</b> Patrick Fischer</div>
+
+<div class="record"><b>Property Address:</b> Shorewood Dr, San Diego, CA 92114</div>
+
+<div class="record"><b>Property Type:</b> Residential Cabin</div>
+
+<div class="record"><b>Total Property Value:</b> $320,000</div>
+
+<div class="record"><b>Amount Paid:</b> $315,000</div>
+
+<div class="record"><b>Outstanding Balance:</b> $5,000</div>
+
+<div class="record"><b>Ownership Status:</b> Conditional Ownership</div>
+
+<div class="record"><b>Registry Number:</b> SD-REA-92114-4582</div>
+
+<div class="record"><b>Certificate Serial:</b> JHP-2026-000178</div>
+
+<div class="record"><b>Date Issued:</b> March 13 2026</div>
+
+<div class="registry">
+
+<h4>County Registry Record</h4>
+
+<p>Registered Property Transaction</p>
+
+<p>San Diego County Property Registry</p>
+
+<p class="badge">✔ Verified Registry Entry</p>
+
+</div>
+
+</div>
+
+<div class="client">
+
+<img src="client.jpg">
+
+<h4>Property Owner</h4>
+
+<p>Passport Identification</p>
+
+</div>
+
+</div>
+
+<h3>Property Photos</h3>
+
+<div class="gallery">
+
+<img src="house1.jpeg">
+<img src="house2.jpeg">
+<img src="house3.jpeg">
+<img src="house4.jpeg">
+<img src="house5.jpeg">
+<img src="house6.jpeg">
+<img src="house7.jpeg">
+<img src="house8.jpeg">
+<img src="house9.jpeg">
+
+</div>
+
+<div class="map">
+
+<h3>Property Location</h3>
+
+<iframe
+width="100%"
+height="350"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://maps.google.com/maps?q=San%20Diego%20CA%2092114&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+<div class="payment">
+
+<h3>Outstanding Balance Payment</h3>
+
+<p>Remaining Balance: <b>$5,000</b></p>
+
+<p><b>CashApp:</b> $JohnHomesProperty</p>
+
+<p><b>Card Payment:</b> Visa / Mastercard</p>
+
+<p><b>Bank Transfer</b></p>
+
+<p>
+Bank: Wells Fargo<br>
+Account Name: John Homes Property LLC<br>
+Routing Number: 121000248
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>John Homes Property</p>
+
+<p>San Diego Real Estate Services</p>
+
+<p>Official Property Registry Portal</p>
+
+</footer>
+
+<script>
+
+function verify(){
+
+var id=document.getElementById("verifyID").value;
+
+if(id==="JHP-SD-92114-PF-2026"){
+
+document.getElementById("resultBox").style.display="block";
+
+}
+
+else{
+
+alert("Verification ID not found");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
